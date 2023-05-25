@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: #fff;
+    border-radius: 0px;
+    /* display: flex; */
+    text-align: center;
+    padding: 10px;
+    border: 0.2px solid;
+
+}
+.menu1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid black;
+    padding: 0px;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.menu1 ul{
+    list-style-type: none;
+}
+.menu1 ul li{
+    display: inline;
+}
+.menu1 ul li a{
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 10px;
+    color: black;
+}
+.stiker{
+    padding: 0px;
+    margin-left: 00px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ .navbar ul{
+    overflow: hidden;
+    display: flex;
+} 
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 12px 12px;
+    display: flex;
+    justify-content: center;
+
+}
+.menu {
+    padding-left: 900px;
+
+}
+.navbar li a{
+    padding: 8px 10px;
+    text-decoration: none;
+    color: black;
+    text-size-adjust: 10%;
+}
+/* Style the search form
+form {
+    display: flex;
+    
+  }
+  input[type=text] {
+    width: 28%;
+    height: 10px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('search.svg');
+    background-position: 155px 5px; 
+    background-repeat: no-repeat;
+    padding: 9px;
+    background-size: 20px;
+    margin-top: 10px;
+  } */
+  
+.img1{
+    margin-left: -150vh;
+ margin-bottom: -130px;   
+margin-top: -70px;
+}
