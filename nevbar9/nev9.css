@@ -1,0 +1,89 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar{
+        background-color: #fff;
+        border-radius: 0px;
+        text-align: center;
+        padding: 10px;
+        border: 0.2px solid;
+        
+
+    }
+    .menu1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 3px solid black;
+        padding: 0px;
+        margin-left: 50px;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+    .stiker{
+        padding: 0px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .stiker i{
+        padding: 10px;
+    }
+    .navbar ul{
+        overflow: hidden;
+        display: flex;
+        margin-top: -70px;
+    } 
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin: 12px 12px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .menu {
+        padding-left: 900px;
+
+    }
+    .navbar li a{
+        padding: 8px 10px;
+        text-decoration: none;
+        color: black;
+        text-size-adjust: 10%;
+    } 
+    .img1{
+        margin-right: 165vh;
+        margin-top: 10px;
+    }
+    #y2{
+        border: none;
+        margin-top: 0px;
+        
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid black;
+        border-bottom: none;
+
+    }
+    .content, .content2, .content3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    #h1:visited{
+        color: blue;
+    }
+    .apple ul,.image ul, .bose ul, .bose1 ul, .sony ul, .sony1 ul{
+        list-style-type: none;
+    }

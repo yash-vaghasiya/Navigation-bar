@@ -6,9 +6,8 @@
 .navbar{
     background-color: #fff;
     border-radius: 0px;
-    /* display: flex; */
     text-align: center;
-    padding: 10px;
+    padding:  10px;
     border: 0.2px solid;
 
 }
@@ -35,7 +34,7 @@
 }
 .stiker{
     padding: 0px;
-    margin-left: 00px;
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +53,7 @@
 
 }
 .menu {
-    padding-left: 900px;
+    padding-left: 480px;
 
 }
 .navbar li a{
@@ -63,28 +62,29 @@
     color: black;
     text-size-adjust: 10%;
 }
-/* Style the search form
-form {
-    display: flex;
-    
-  }
-  input[type=text] {
-    width: 28%;
-    height: 10px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('search.svg');
-    background-position: 155px 5px; 
-    background-repeat: no-repeat;
-    padding: 9px;
-    background-size: 20px;
-    margin-top: 10px;
-  } */
-  
 .img1{
-    margin-left: -150vh;
- margin-bottom: -130px;   
+    margin-left: 40px;
+ margin-bottom: -60px;   
 margin-top: -70px;
 }
+/* .img1{
+    margin-right: 80vh;
+} */
+.stiker i{
+    padding: 10px;
+}
+input[type=text] {
+    width: 90%;
+    height: 12px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    background-color: white;
+    background-image: url('search.svg');
+    background-position: 200px 7px; 
+    background-repeat: no-repeat;
+    padding: 8px;
+    background-size: 15px;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
