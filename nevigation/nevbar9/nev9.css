@@ -79,7 +79,7 @@
         align-items: center;
     }
     .content{
-        margin-top: 100px;
+        margin-top: 70px;
     }
     #h1:visited{
         color: blue;
@@ -87,3 +87,6 @@
     .apple ul,.image ul, .bose ul, .bose1 ul, .sony ul, .sony1 ul{
         list-style-type: none;
     }
+.container ul li{
+    padding: 13px;
+}
