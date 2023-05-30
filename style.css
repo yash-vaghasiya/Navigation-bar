@@ -4,7 +4,7 @@
 }
 .nevi{
     border-bottom: 2px solid black;
-    margin: 0px;
+    padding-bottom: 30px;
     text-align: center;
     text-size-adjust: 10px;
     text-decoration: dotted;
@@ -25,7 +25,10 @@ button{
     background-color: olivedrab;
     
 }
-.cont{
-    margin-top: 0px;
+body{
     background-color: aqua;
+}
+
+.cont{
+    margin-top:20px;
 }
