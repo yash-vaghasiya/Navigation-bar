@@ -17,6 +17,7 @@
     margin: 20px;
     margin-left: 10px;
     flex-direction: column;
+    cursor: pointer;
 }
 button{
     padding: 15px 70px;
