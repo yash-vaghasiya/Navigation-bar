@@ -8,19 +8,17 @@
         border-radius: 0px;
         text-align: center;
         padding: 10px;
-        border: 0.2px solid;
-        
-
     }
     .menu1{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 3px solid black;
+        border-bottom: 1px solid black;
         padding: 0px;
-        margin-left: 50px;
-        margin-right: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
         margin-top: 20px;
+        margin-bottom: 15px;
     }
     .stiker{
         padding: 0px;
@@ -32,45 +30,49 @@
     }
     .stiker i{
         padding: 10px;
+        margin-bottom: 15px;
     }
     .navbar ul{
         overflow: hidden;
         display: flex;
-        margin-top: -70px;
+        margin-top: -40px;
+        margin-right: 75px;
     } 
     .navbar li{
         float: left;
         list-style: none;
-        margin: 12px 12px;
+        margin: 6px 5px;
         display: flex;
         justify-content: center;
 
     }
     .menu {
-        padding-left: 900px;
+        padding-left: 992px;
 
     }
     .navbar li a{
-        padding: 8px 10px;
+        padding: 4px 2px;
         text-decoration: none;
         color: black;
-        text-size-adjust: 10%;
+        text-size-adjust: 2%;
     } 
     .img1{
-        margin-right: 165vh;
-        margin-top: 10px;
+        margin-right: 160vh;
+        margin-top: 12px;
     }
     #y2{
         border: none;
         margin-top: 0px;
+        margin-bottom: 15px;
         
     }
     .container{
         display: flex;
         justify-content: space-around;
-        border: 2px solid black;
         border-bottom: none;
-
+        margin-top: 10px;
+        background-color: #fff;
+        
     }
     .content, .content2, .content3{
         display: flex;
@@ -80,6 +82,7 @@
     }
     .content{
         margin-top: 70px;
+        
     }
     #h1:visited{
         color: blue;
@@ -88,5 +91,20 @@
         list-style-type: none;
     }
 .container ul li{
-    padding: 13px;
+    padding: 8px;
+}
+.container10{
+    display: flex;
+    justify-content: space-around;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.image img{
+    margin-top: 36px;
+    margin-right: 185px;
+}
+.content2{
+    margin-right: 78px;
 }

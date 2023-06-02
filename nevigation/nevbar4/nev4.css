@@ -8,16 +8,15 @@
     border-radius: 0px;
     text-align: center;
     padding: 10px;
-    border: 0.2px solid;
 
 }
 .menu1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
     padding: 0px;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-right: 100px;
 }
 .menu1 ul{
@@ -28,8 +27,8 @@
 }
 .menu1 ul li a{
     text-decoration: none;
-    padding: 5px;
-    margin-left: 10px;
+    padding: 15px;
+    margin-left: -15px;
     color: black;
 }
 .stiker{
@@ -43,30 +42,38 @@
  .navbar ul{
     overflow: hidden;
     display: flex;
+    margin-right: 90px;
 } 
 .navbar li{
     float: left;
     list-style: none;
-    margin: 12px 12px;
+    margin: 6px 6px;
     display: flex;
     justify-content: center;
-
 }
 .menu {
-    padding-left: 133vh;
+    padding-left: 920px;
+    margin-top: -45px;
 
 }
 .navbar li a{
     padding: 8px 10px;
     text-decoration: none;
     color: black;
-    text-size-adjust: 10%;
-}
-.img1{
-    margin-left: -150vh;
- margin-bottom: -130px;   
-margin-top: -70px;
+    text-size-adjust: 2%;
 }
 .stiker i{
     padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.img1{
+    padding-right: 162vh;
+    margin-top: 15px;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+
 }

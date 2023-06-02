@@ -7,18 +7,17 @@
     background-color: #fff;
     border-radius: 0px;
     text-align: center;
-    padding:  10px;
-    border: 0.2px solid;
-
+    padding: 10px;
 }
 .menu1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-bottom: 1px solid black;
     padding: 0px;
-    margin-left: 50px;
-    margin-right: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 10px;
 }
 .menu1 ul{
     list-style-type: none;
@@ -40,20 +39,21 @@
     align-items: center;
 
 }
- .navbar ul{
+ .navbar ul {
     overflow: hidden;
     display: flex;
+    margin-right: 400px;
 } 
 .navbar li{
     float: left;
     list-style: none;
-    margin: 12px 12px;
+    margin: 8px 8px;
     display: flex;
     justify-content: center;
 
 }
 .menu {
-    padding-left: 480px;
+    padding-left: 445px;
 
 }
 .navbar li a{
@@ -61,14 +61,11 @@
     text-decoration: none;
     color: black;
     text-size-adjust: 10%;
-}
-.img1{
-    margin-left: 40px;
- margin-bottom: -60px;   
-margin-top: -70px;
+    text-align: center;
 }
 .stiker i{
     padding: 10px;
+    margin-bottom: 20px;
 }
 .search button{
     float: right;
@@ -79,8 +76,24 @@ margin-top: -70px;
     background-color: #fff;
     font-size: medium;
     cursor: pointer;
+    margin-bottom: 20px;
 }    
 .navbar ul i{
     padding: 20px;
-    margin-left: 45vh;
+    position: absolute;
+    right: 6%;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.j1{
+    margin-left: 50px;
+}
+img{
+    margin-bottom: 20px;
 }

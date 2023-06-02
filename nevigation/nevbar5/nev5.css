@@ -8,54 +8,66 @@
     border-radius: 0px;
     display: flex;
     text-align: center;
-    padding: 10px;
-    border: 0.2px solid;
-
+    padding: 20px;
 }
  .navbar ul{
     overflow: hidden;
     display: flex;
+    padding-left: 10PX;
 } 
 .navbar li{
     float: left;
     list-style: none;
-    margin: 20px 30px;
+    margin: 20px 10px;
+    margin-right: 20PX;
     
 }
 .menu {
-    padding-left: 110px;
+    padding-left: 200px;
+    margin-right: 212px;
 }
 .navbar li a{
-    padding: 9px 9px;
+    padding: 0px;
     text-decoration: none;
     color: black;
 }
     .search button{
+        height: 55%;
         float: right;
         color: black;
-        padding: 10px 35px;
+        padding: 7px 35px;
         border-radius: 20px;
         font-size: medium;
         cursor: pointer;
-        border: none;
-        background-color: #e2c054d9;
-        margin-top: 10px;
+        border: 1px solid black;
+        margin-top: 12px;
+        margin-right: 0px;
+        background-color: #fff;
     }
-    .search button{
+    .search1 button{
+        background-color: #fff;
+        height: 55%;
         float: right;
         color: black;
-        padding: 10px 35px;
+        padding: 7px 35px;
         border-radius: 20px;
         font-size: medium;
         cursor: pointer;
-        border: none;
-        background-color: #e2c054d9;
+        border: 1px solid black;
         margin-left: 60px;
+        margin-top: 12px;
+        margin-right: 50px;
     }
-
-
-.img1{
-margin-left: 70px;
-margin-bottom: -80px;   
-margin-top: -70px;
-}
+    .img1{
+        margin-top: 12px;
+        margin-left: 45px;
+    }
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .body{
+        font-family: 'Poppins', sans-serif;
+    
+    }
+    

@@ -8,40 +8,49 @@
     border-radius: 0px;
     display: flex;
     text-align: center;
-    padding: 10px;
-    border: 0.2px solid;
-
+    padding: 15px;
 }
  .navbar ul{
     overflow: hidden;
-    display: flex;
+    display: flex;  
 } 
 .navbar li{
     float: left;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 0px;
     margin-top: 20px;
     margin-left: 20px;
     
 }
 .menu {
-    padding-left: 400px;
-    margin-left: 10px;
+    padding-left: 305px;
+    margin-right: 102px;
 }
 .navbar li a{
-    padding: 6px 6px;
+    padding: 6px 0px;
     text-decoration: none;
     color: black;
-}
-.img1{
-    margin-left: 40px;
- margin-bottom: -80px;   
-margin-top: -70px;
+    margin-left: 30px;
 }
 .search{
-    margin-left: 40vh;
+    margin-left: 25vh;
     margin-top: 20px;
+}
+.search i{
+    margin-right: 100px;
 }
 .menu1{
     margin-left: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.img1{
+    margin-right: 60px;
+    margin-top: 10px;
 }

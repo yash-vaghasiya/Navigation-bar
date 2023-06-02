@@ -22,11 +22,11 @@
 button{
     padding: 15px 70px;
     border-radius: 90px;
-    background-color: olivedrab;
+    background-color: rgb(139, 165, 87);
     
 }
 body{
-    background-color: aqua;
+    background-color: rgb(174, 216, 216);
 }
 
 .cont{
