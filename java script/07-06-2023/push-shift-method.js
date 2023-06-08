@@ -75,3 +75,5 @@ document.write("<h1> slice method </h1>")
   let number3 = number2.slice(2, 7);
   document.write(number2 + "<br>");
   document.write(number3 + "<br>");
+
+  
