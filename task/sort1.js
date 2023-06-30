@@ -3,44 +3,27 @@ fetch("product.json")
   .then((data) => {
     var result = data.result;
     var productContainer = document.getElementById("productContainer");
-
+    console.log("666666666666666666", data.result)
     // All Product Liss
-    var countDisplay = document.getElementById("All");
-    var approve = result.filter(function (product) {
-      return product.status === "approved";
-    });
-    countDisplay.innerHTML = `Approve Status: ${approve.length}`;
-    countDisplay.addEventListener("click", function () {
-      renderProductCards(approve);
-    });
-
-    // Only Show Reviews
-    var clickReviews = document.getElementById("reviews");
-    var emptyReviews = result.filter(function (house) {
-      return house.status === "pending";
-    });
-    clickReviews.innerHTML = `Pending Status: ${emptyReviews.length}`;
-    clickReviews.addEventListener("click", function () {
-      renderProductCards(emptyReviews);
-    });
-
-    // Only Show NoReviews
-    var clickShowBadReview = document.getElementById("showBadReviews");
-    var badReviews = result.filter(function (product) {
-      return product.status === "decline";
-    });
-    clickShowBadReview.innerHTML = `Decline Status: ${badReviews.length}`;
-
-    clickShowBadReview.addEventListener("click", function () {
-      var noReviews = result.filter(function (product) {
-        return product.status === "decline";
+    function updateCountAndRender(status, elementId) {
+      var countDisplay = document.getElementById(elementId);
+      var filteredProducts = result;
+      if (status !== "result") {
+        filteredProducts = result.filter(function (product) {
+          return product.status === status;
+        });
+      }
+      countDisplay.innerHTML = `${status} Status: ${filteredProducts.length}`;
+      countDisplay.addEventListener("click", function () {
+        return renderProductCards(filteredProducts);
       });
-      renderProductCards(noReviews);
-    });
+    }
+
 
     function renderProductCards(products) {
       productContainer.innerHTML = "";
       products.forEach(function (product) {
+        console.log("9999999999999999", product)
         // Date day month year
         var createdAt = new Date(product.createdAt);
         var date = createdAt.toLocaleString("default", { day: 'numeric', month: 'long', year: 'numeric' });
@@ -65,7 +48,7 @@ fetch("product.json")
         <div class="display" style="padding:10px;">
           <div class="container">
               <div class="product-title">${product.title}</div>
-              <div><span class="product-price">${product.price[0].number + " " + product.price[0].currency.slice(0, 1)}</span></div>
+              <div><span class="product-price">${product.price[0].number + " " + product.price[0].currency}</span></div>
           </div>
           <div class="product-location">${product.location}</div>
           <div class="dateRating">
@@ -80,10 +63,11 @@ fetch("product.json")
 
       });
     }
-    
+    updateCountAndRender("result", "defaults")
+    updateCountAndRender("approved", "All");
+    updateCountAndRender("pending", "reviews");
+    updateCountAndRender("decline", "showBadReviews");
     renderProductCards(result);
   })
 
   .catch((error) => console.log(error));
-
-
