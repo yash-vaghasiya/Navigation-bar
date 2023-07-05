@@ -25,6 +25,7 @@ body {
   text-align: center;
   margin-top: 20px;
   align-items: center;
+  
 }
 
 .fa-regular,
@@ -66,6 +67,7 @@ button {
   font-size: 17px;
   margin-left: 20px;
   margin-top: 15px;
+  background-color: antiquewhite;
 }
 
 button:focus {
