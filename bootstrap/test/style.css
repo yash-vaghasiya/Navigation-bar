@@ -14,3 +14,22 @@
     background-size: cover;
 }
 
+.service{
+    box-shadow: 0 0 45px rgba(0, 0, 0, .10);
+}
+.ff-secondary{
+    font-family: 'pacifico',cursive;
+
+}
+.col-6 img{
+    transition :transform .2s;
+}
+.col-6 img:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.nav-pills .nav-item .active {
+    border-bottom: 2px solid var(--primary);
+}
+
