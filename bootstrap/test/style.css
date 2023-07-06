@@ -13,6 +13,7 @@
     background-position: center center;
     background-size: cover;
 }
+
 .service{
     box-shadow: 0 0 45px rgba(0, 0, 0, .10);
 }
@@ -31,3 +32,4 @@
 .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
 }
+
