@@ -1,7 +1,7 @@
 "# Navigation-bar" 
 
-live  link  url =  https://yash-vaghasiya.github.io/Navigation-bar/bootstrap/test/index.html
+live  link  url =  https://yash-vaghasiya.github.io/Navigation-bar/
 
-topic = bootstrap task prectis
+Topic = bootstrap task prectis
 
-- card, craousal, modal, nev, pagination, task 10%
+-  Service in four Card Create, AboutUs four Image set and about us content and button create, Food Menu and his items list create
