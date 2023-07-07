@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circle{
+    height: 1176px;
+    width: 1176px;
+    position: absolute;
+    left: 65vh;
+    top: 0;
+    z-index: -1;
+}
