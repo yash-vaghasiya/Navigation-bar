@@ -1,13 +1,134 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.circle{
-    height: 1176px;
-    width: 1176px;
+
+.circle {
+    overflow: hidden;
+    height: 1226px;
+    width: 1326px;
+    border-radius: 1176px;
     position: absolute;
-    left: 65vh;
-    top: 0;
+    left: 53vh;
+    top: -40rem;
     z-index: -1;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.nav-item {
+    padding-left: 3rem;
+}
+
+.circle {
+    background-color: #20af49;
+}
+
+.image {
+    margin-top: -1rem;
+    margin-left: 33rem;
+}
+
+.rest {
+    margin-top: -14rem;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    flex-direction: column;
+    display: flex;
+}
+
+.ret {
+    color: #62B62C;
+}
+
+.butt {
+    background-color: #62B62C;
+    border-radius: 8rem;
+    font-family: 'Poppins';
+    width: 140px;
+    height: 45px;
+    justify-content: center;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.lead {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    letter-spacing: 0.56px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.im {
+    margin-left: 44rem;
+    margin-top: -16rem;
+    height: 285px;
+    width: 255px;
+}
+
+.ia {
+    margin-top: -12rem;
+    margin-left: 40rem;
+}
+
+.ie {
+    margin-top: -14rem;
+    margin-left: 45rem;
+}
+
+.iq {
+    margin-top: -10rem;
+    margin-left: 55rem;
+}
+
+.iw {
+    margin-top: -1rem;
+    margin-left: 66rem;
+}
+
+.ir {
+    margin-top: 3rem;
+    margin-left: 71rem;
+}
+
+.id {
+    margin-top: 1rem;
+    margin-left: 70rem;
+}
+
+.button,
+.button1 {
+    background-image: url(img/ion_navigate-circle\ \(1\).png);
+    height: 40px;
+    width: 40px;
+    margin-top: 5rem;
+    margin-left: 30rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button2,
+.button3 {
+    background-image: url(img/ion_navigate-circle\ \(3\).png);
+    height: 40px;
+    width: 40px;
+    margin-top: 4.5rem;
+    margin-left: 30rem;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
