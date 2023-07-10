@@ -89,14 +89,45 @@
   </div>
   <div class="col-12">
     <div class="d-flex justify-content-center">
-      <div class="btn button" id="button">
+      <div class="btn button ab" id="button">
       </div>
       <div class="btn button1" id="button1">
       </div>
     </div>
   </div>
-
   </div>
+  <script>
+    const button1 = document.querySelector('#button');
+    const button3 = document.querySelector('#button1');
+    const circle = document.querySelector('.circle');
+    const ret = document.querySelector('.ret');
+    const butt = document.querySelector('.butt');
+    const ecli = document.querySelector('.ecli');
+    const ic = document.querySelector('.ic');
+    const ab = document.querySelector('.ab');
+
+    button1.addEventListener('click', () => {
+      circle.style.backgroundColor = '#20af49';
+      ret.style.color = '#62B62C';
+      ecli.src = 'img/Ellipse 1.png';
+      butt.style.backgroundColor = '#62B62C';
+      button1.classList.add('active');
+      ic.src = 'img/center image 1.png';
+      ab.src = 'img/green-circle-icon.png';
+      
+    });
+
+    button3.addEventListener('click', () => {
+      circle.style.backgroundColor = '#FF995A';
+      ret.style.color = '#FF995A';
+      butt.style.backgroundColor = '#FF995A';
+      ecli.src = 'img/Ellipse 1 (2).png';
+      button1.classList.remove('active');
+      ic.src = 'img/center image2 1.png'
+      ab.src = 'img/ion_navigate-circle (4).png'
+    });
+
+  </script>
 </body>
 
 </html>

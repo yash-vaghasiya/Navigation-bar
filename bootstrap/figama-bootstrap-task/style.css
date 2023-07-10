@@ -121,14 +121,3 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-.button2,
-.button3 {
-    background-image: url(img/ion_navigate-circle\ \(3\).png);
-    height: 40px;
-    width: 40px;
-    margin-top: 4.5rem;
-    margin-left: 30rem;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
