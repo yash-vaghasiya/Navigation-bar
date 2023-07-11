@@ -5,12 +5,10 @@
 }
 
 .circle {
-    overflow: hidden;
-    height: 1226px;
-    width: 1326px;
+    height: 1236px;
+    width: 1426px;
     border-radius: 1176px;
-    position: absolute;
-    left: 53vh;
+    left: 20rem;
     top: -40rem;
     z-index: -1;
 
@@ -19,7 +17,6 @@
 body {
     overflow: hidden;
 }
-
 .nav-item {
     padding-left: 3rem;
 }
@@ -29,12 +26,13 @@ body {
 }
 
 .image {
-    margin-top: -1rem;
-    margin-left: 33rem;
+    left: 44rem;
+    top: 10rem;
 }
 
-.rest {
-    margin-top: -14rem;
+.rest{
+    position: relative;
+    top: 6rem;
     font-family: Poppins;
     font-size: 36px;
     font-weight: 500;
@@ -73,51 +71,127 @@ body {
     flex-direction: column;
     flex-shrink: 0;
 }
-
-.im {
-    margin-left: 44rem;
-    margin-top: -16rem;
-    height: 285px;
-    width: 255px;
+.imag{
+    position: absolute;
+    left: 52rem;
+    top: 18.5rem;
 }
-
-.ia {
-    margin-top: -12rem;
-    margin-left: 40rem;
+.i1{
+    position: absolute;
+    left: 41.5rem;
+    top: 22rem;
 }
-
-.ie {
-    margin-top: -14rem;
-    margin-left: 45rem;
+.i2{
+    position: absolute;
+    left: 46rem;
+    top: 12rem;
 }
-
-.iq {
-    margin-top: -10rem;
-    margin-left: 55rem;
+.i3{
+    position: absolute;
+    left: 56rem;
+    top: 7.5rem;
 }
-
-.iw {
-    margin-top: -1rem;
-    margin-left: 66rem;
+.i4{
+    position: absolute;
+    left: 68rem;
+    top: 12.5rem;
 }
-
-.ir {
-    margin-top: 3rem;
-    margin-left: 71rem;
+.i5{
+    position: absolute;
+    left: 72.5rem;
+    top: 22rem;
 }
-
-.id {
-    margin-top: 1rem;
-    margin-left: 70rem;
+.previous{
+    position: absolute;
+    left: 41rem;
+    top: 32rem;
 }
-
-.button,
-.button1 {
+.next{
+    position: absolute;
+    left: 74rem;
+    top: 32rem;
+}
+.button1,.button2{
     background-image: url(img/ion_navigate-circle\ \(1\).png);
-    height: 40px;
+    height: 30px;
     width: 40px;
-    margin-top: 5rem;
-    margin-left: 30rem;
+    border: #FFF;
+    margin-left: 11rem;
+    margin-right: 20rem;
+    margin-top: 24rem;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+/* Add media query for mobile screens */
+@media (max-width: 576px) {
+    .circle {
+      height: 300px;
+      width: 300px;
+      border-radius: 150px;
+      left: -50px;
+      top: -100px;
+    }
+  
+    .image {
+      left: 1.5rem;
+      top: 0.9rem;
+    }
+  
+    .rest {
+      top: 4rem;
+      /* text-align: center; */
+    }
+  
+    .imag,
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5 {
+      position: static;
+      margin: 2rem auto;
+    }
+}
+@keyframes ring-in {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate-in {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+    
+  }
+  
+  @keyframes rotate-out {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .rotate-in {
+    animation-name: rotate-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  .rotate-out {
+    animation-name: rotate-out;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
