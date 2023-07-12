@@ -171,7 +171,7 @@ body {
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(0.5);
   }
 }
 
@@ -181,7 +181,7 @@ body {
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate(90deg);
   }
 
 }
@@ -192,7 +192,7 @@ body {
   }
 
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(-90deg);
   }
 }
 
@@ -200,12 +200,12 @@ body {
   animation-name: rotate-in;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
 
 .rotate-out {
   animation-name: rotate-out;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
 }
