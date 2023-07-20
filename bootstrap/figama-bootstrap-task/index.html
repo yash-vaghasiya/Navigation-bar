@@ -57,65 +57,29 @@
         </div>
         <div class="col-lg-6">
           <div class="circle border-black rounded-circle position-absolute overflow-hidden">
-          </div>
-          <img class="image position-absolute" src="img/Ellipse 3.png" alt="">
-          <img class="imag" src="img/center image 1.png" style="transform: rotate(180deg) 0.1s;" alt="">
-          <img class="i1" src="img/image 2.png" alt="">
-          <img class="i2" src="img/image 3.png" alt="">
-          <img class="i3" src="img/center image.png" alt="">
-          <img class="i4" src="img/image 1.png" alt="">
-          <img class="i5" src="img/image 6.png" alt="">
-          <div class="slider">
-            <div class="circular-slider circular-slider-1">
-              <div class="wrapper">
-                <div class="controls">
-                  <div class="controls__left">
-                    <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-left"></i></div>
-                  </div>
-                  <div class="controls__right">
-                    <div class="icon-wrapper"><i class="far fa-arrow-alt-circle-right"></i></div>
-                  </div>
-                  <div class="controls__autoplay controls__autoplay_running">
-                    <div class="icon-wrapper">
-                      <div class="pause"><i class="far fa-pause-circle"></i></div>
-                      <div class="run"><i class="far fa-play-circle"></i></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="slides-holder position-relative h-75 w-50">
-                  <div class="slides-holder__item h-25 w-25 slides-holder__item_active"><img src="img/center image.png"
-                      alt="img" /></div>
-                  <div class=" h-25 w-25"><img src="img/image 1.png" alt="img" /></div>
-                  <div class=" h-25 w-25"><img src="img/image 2.png" alt="img" /></div>
-                  <div class=" h-25 w-25"><img src="img/image 3.png" alt="img" /></div>
-                  <div class="h-25 w-25"><img src="img/image 6.png" alt="img" /></div>
-                  <div class=" h-25 w-25"><img src="img/image 8.png" alt="img" /></div>
-                </div>
-                <div class="descriptions">
-                  <div class="descriptions__item">
-                    <div class="descriptions__item">
-                      <img class="description" src="img/img/center image2 1.png">
-                    </div>
-                    <div class="descriptions__item">
-                      <img class="description" src="img/img/center image2 1.png">
-                    </div>
-                    <div class="descriptions__item">
-                      <img class="description" src="img/img/center image2 1.png">
-                    </div>
-                    <div class="descriptions__item">
-                      <img class="description" src="img/img/center image2 1.png">
-                    </div>
-                    <div class="descriptions__item">
-                      <img class="description" src="img/img/center image2 1.png">
-                    </div>
-                    <div class="descriptions__item">
-                      <img class="description" src="img/img/center image2 1.png">
-                    </div>
-                  </div>
-                </div>
+            <div id="parent-circle1">
+              <div class="circle1 blue">
+                <div id="blue-circle1" class="circle1-content"><img src="img/image 1.png" alt=""></div>
+              </div>
+              <div class="circle1 pink">
+                <div id="pink-circle1" class="circle1-content"><img src="img/image 2.png" alt=""></div>
+              </div>
+              <div class="circle1 lime">
+                <div id="lime-circle1" class="circle1-content"><img src="img/image 3.png" alt=""></div>
+              </div>
+              <div class="circle1 orange">
+                <div id="orange-circle1" class="circle1-content"><img src="img/center image.png" alt=""></div>
+              </div>
+              <div class="circle1 red">
+                <div id="red-circle1" class="circle1-content"><img src="img/image 8.png" alt=""></div>
               </div>
             </div>
+            <div>
+              <img class="image" src="img/Ellipse 3.png" alt="">
+            </div>
           </div>
+          <img class="imag" src="img/center image 1.png" alt="">
+
           <div class="d-flex but">
             <div class="btn button1" id="button"></div>
             <div class="btn button2 " id="button1"></div>
@@ -126,79 +90,42 @@
     </div>
   </div>
   </div>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script src="js/circular-slider.js"></script>
-
   <script>
-    const button1 = document.querySelector('#button');
-    const button3 = document.querySelector('#button1');
+
     const circle = document.querySelector('.circle');
     const ret = document.querySelector('.ret');
     const butt = document.querySelector('.butt');
     const ecli = document.querySelector('.ecli');
     const imag = document.querySelector('.imag');
     const but = document.querySelector('.but');
+    const imag1 = document.querySelector('#parent-circle1');
+    const button1 = document.querySelector('#button');
+    const button2 = document.querySelector('#button1');
 
+
+    // Add event listener to Button 1
     button1.addEventListener('click', () => {
+      imag1.style.animation = 'rotate-in 0.1s forwards';
       circle.style.backgroundColor = '#20af49';
       ret.style.color = '#62B62C';
       ecli.src = 'img/Ellipse 1.png';
       butt.style.backgroundColor = '#62B62C';
-      button1.classList.add('active');
       imag.src = 'img/center image 1.png';
       but.src = 'img/ion_navigate-circle (1).png';
-      animateImage('rotate-in');
     });
 
-    button3.addEventListener('click', () => {
+    // Add event listener to Button 2
+    button2.addEventListener('click', () => {
+      imag1.style.animation = 'rotate-out 0.1s forwards';
       circle.style.backgroundColor = '#FF995A';
       ret.style.color = '#FF995A';
       butt.style.backgroundColor = '#FF995A';
       ecli.src = 'img/Ellipse 1 (2).png';
-      button1.classList.remove('active');
       imag.src = 'img/center image2 1.png';
       but.style.backgroundimage.src = 'img/ion_navigate-circle (4).png'
-      animateImage('rotate-out');
     });
 
-    function animateImage(animation) {
-      imag.classList.add(animation);
-      imag.addEventListener('animationend', () => {
-        imag.classList.remove(animation);
-      });
-    }
-    (function () {
-      var $container = $('#circle');
-      var $slider = $('#slider');
-      var sliderW2 = $slider.width() / 2;
-      var sliderH2 = $slider.height() / 2;
-      var radius = 15;
-      var deg = 0;
-      var elP = $('#circle').offset();
-      var elPos = { x: elP.left, y: elP.top };
-      var X = 0, Y = 0;
-      var mdown = false;
-      $('#circle')
-        .mousedown(function (e) { mdown = true; })
-        .mouseup(function (e) { mdown = true; })
-        .mousemove(function (e) {
-          if (mdown) {
-            var mPos = { x: e.clientX - elPos.x, y: e.clientY - elPos.y };
-            var atan = Math.atan2(mPos.x - radius, mPos.y - radius);
-            deg = -atan / (Math.PI / 180) + 180; // final (0-360 positive) degrees from mouse position 
 
-            X = Math.round(radius * Math.sin(deg * Math.PI / 180));
-            Y = Math.round(radius * -Math.cos(deg * Math.PI / 180));
-            $slider.css({ left: X + radius - sliderW2, top: Y + radius - sliderH2 });
-            // AND FINALLY apply exact degrees to ball rotation
-            $slider.css({ WebkitTransform: 'rotate(' + deg + 'deg)' });
-            $slider.css({ '-moz-transform': 'rotate(' + deg + 'deg)' });
-            //
-            // PRINT DEGREES
-            $('input[name="angle"]').val(Math.ceil(deg));
-          }
-        });
-    })();
   </script>
 
 </body>
