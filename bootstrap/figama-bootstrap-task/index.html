@@ -91,39 +91,52 @@
   </div>
   </div>
   <script>
+    
+  const circle = document.querySelector('.circle');
+  const ret = document.querySelector('.ret');
+  const butt = document.querySelector('.butt');
+  const ecli = document.querySelector('.ecli');
+  const imag = document.querySelector('.imag');
+  const but = document.querySelector('.but');
+  const imag1 = document.querySelector('#parent-circle1');
+  const button1 = document.querySelector('#button');
+  const button2 = document.querySelector('#button1');
+  let isRotating = false; 
 
-    const circle = document.querySelector('.circle');
-    const ret = document.querySelector('.ret');
-    const butt = document.querySelector('.butt');
-    const ecli = document.querySelector('.ecli');
-    const imag = document.querySelector('.imag');
-    const but = document.querySelector('.but');
-    const imag1 = document.querySelector('#parent-circle1');
-    const button1 = document.querySelector('#button');
-    const button2 = document.querySelector('#button1');
+  // Function to rotate the carousel in
+  const rotateIn = () => {
+    imag1.style.animation = 'rotate-in .1s ease-in forwards';
+    circle.style.backgroundColor = '#20af49';
+    ret.style.color = '#62B62C';
+    ecli.src = 'img/Ellipse 1.png';
+    butt.style.backgroundColor = '#62B62C';
+    imag.src = 'img/center image 1.png';
+    isRotating = true;
+  };
 
+  // Function to rotate the carousel out
+  const rotateOut = () => {
+    imag1.style.animation = 'rotate-out .1s ease-out forwards';
+    circle.style.backgroundColor = '#FF995A';
+    ret.style.color = '#FF995A';
+    butt.style.backgroundColor = '#FF995A';
+    ecli.src = 'img/Ellipse 1 (2).png';
+    imag.src = 'img/center image2 1.png';
+    isRotating = false;
+  };
 
-    // Add event listener to Button 1
-    button1.addEventListener('click', () => {
-      imag1.style.animation = 'rotate-in 0.1s forwards';
-      circle.style.backgroundColor = '#20af49';
-      ret.style.color = '#62B62C';
-      ecli.src = 'img/Ellipse 1.png';
-      butt.style.backgroundColor = '#62B62C';
-      imag.src = 'img/center image 1.png';
-      but.src = 'img/ion_navigate-circle (1).png';
-    });
+  const toggleCarousel = () => {
+    if (isRotating) {
+      rotateOut();
+    } else {
+      rotateIn();
+    }
+  };
+  button1.addEventListener('click', toggleCarousel);
 
-    // Add event listener to Button 2
-    button2.addEventListener('click', () => {
-      imag1.style.animation = 'rotate-out 0.1s forwards';
-      circle.style.backgroundColor = '#FF995A';
-      ret.style.color = '#FF995A';
-      butt.style.backgroundColor = '#FF995A';
-      ecli.src = 'img/Ellipse 1 (2).png';
-      imag.src = 'img/center image2 1.png';
-      but.style.backgroundimage.src = 'img/ion_navigate-circle (4).png'
-    });
+  // Add event listener to Button 2
+  button2.addEventListener('click', toggleCarousel);
+
 
 
   </script>
