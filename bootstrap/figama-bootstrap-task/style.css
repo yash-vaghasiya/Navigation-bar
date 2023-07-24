@@ -173,7 +173,6 @@ body {
   height: 37vw;
   margin: 0;
   border-radius: 50%;
-  animation-delay: 0;
   top: 49rem;
   left: 25rem;
 }
@@ -208,8 +207,8 @@ body {
 }
 
 .lime {
-  top: 15%;
-  left: 5rem;
+  top: 18%;
+  left: 3.5rem;
   transform: translate(-50%, -50%);
 }
 
@@ -224,6 +223,16 @@ body {
   left: 30rem;
   transform: translate(-50%, -50%);
 }
+.green {
+  top: 80%;
+  left: 27rem;
+  transform: translate(-50%, -50%);
+}
+.yellow {
+  top: 78%;
+  right: 21.5rem;
+  transform: translate(-50%, -50%);
+}
 
 .content {
   margin-left: 20%;
@@ -234,11 +243,8 @@ body {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(30deg);
-  }
-  50%{
-    transform: rotate(90deg);
+  100%{
+    transform: rotate(40deg);
   }
 }
 
@@ -246,10 +252,7 @@ body {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(-30deg);
-  }
-  50%{
-    transform: rotate(-90deg);
+  100%{
+    transform: rotate(-40deg);
   }
 }
