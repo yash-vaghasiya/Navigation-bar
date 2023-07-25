@@ -86,65 +86,93 @@
           </div>
           <img class="imag" src="img/center image 1.png" alt="">
 
-          <div class="d-flex but">
-            <div class="btn button1" id="button"></div>
-            <div class="btn button2 " id="button1"></div>
-          </div>
         </div>
       </div>
     </div>
   </div>
   </div>
-  <script>
-    
-  const circle = document.querySelector('.circle');
-  const ret = document.querySelector('.ret');
-  const butt = document.querySelector('.butt');
-  const ecli = document.querySelector('.ecli');
-  const imag = document.querySelector('.imag');
-  const but = document.querySelector('.but');
-  const imag1 = document.querySelector('#parent-circle1');
-  const button1 = document.querySelector('#button');
-  const button2 = document.querySelector('#button1');
-  let isRotating = false; 
-
-  // Function to rotate the carousel in
-  const rotateIn = () => {
-    imag1.style.animation = 'rotate-in 0.6s ease-in forwards';
-    circle.style.backgroundColor = '#20af49';
-    ret.style.color = '#62B62C';
-    ecli.src = 'img/Ellipse 1.png';
-    butt.style.backgroundColor = '#62B62C';
-    imag.src = 'img/center image 1.png';
-    isRotating = true;
-  };
-
-  // Function to rotate the carousel out
-  const rotateOut = () => {
-    imag1.style.animation = 'rotate-out 0.6s ease-out forwards';
-    circle.style.backgroundColor = '#FF995A';
-    ret.style.color = '#FF995A';
-    butt.style.backgroundColor = '#FF995A';
-    ecli.src = 'img/Ellipse 1 (2).png';
-    imag.src = 'img/center image2 1.png';
-    isRotating = false;
-  };
-
-  const toggleCarousel = () => {
-    if (isRotating) {
-      rotateOut();
-    } else {
-      rotateIn();
-    }
-  };
-  button1.addEventListener('click', toggleCarousel);
-
-  // Add event listener to Button 2
-  button2.addEventListener('click', toggleCarousel);
+  </div>
+  <div class="d-flex ">
+    <div class="btn button1" id="button">
+      <img class="rounded-circle but" src="img/ion_navigate-circle (1).png" alt="">
+    </div>
+    <div class="btn button2 " id="button1">
+      <img class="rounded-circle but1" src="img/ion_navigate-circle (1).png" alt="">
+    </div>
 
 
+    <script>
+      const circle = document.querySelector('.circle');
+      const ret = document.querySelector('.ret');
+      const butt = document.querySelector('.butt');
+      const ecli = document.querySelector('.ecli');
+      const imag = document.querySelector('.imag');
+      const but = document.querySelector('.but');
+      const imag1 = document.querySelector('#parent-circle1');
+      const button1 = document.querySelector('#button');
+      const button2 = document.querySelector('#button1');
+      let isRotating = false;
+      let isZoomIn = false;
+      const but1 = document.querySelector('.but1');
 
-  </script>
+      // Function to rotate the carousel in
+      const rotateIn = () => {
+        imag1.style.animation = 'rotate-in .4s ease-in forwards';
+        circle.style.backgroundColor = '#20af49';
+        ret.style.color = '#62B62C';
+        ecli.src = 'img/Ellipse 1.png';
+        butt.style.backgroundColor = '#62B62C';
+        imag.src = 'img/center image 1.png';
+        isRotating = true;
+        but.src = 'img/ion_navigate-circle (1).png';
+        but1.src = 'img/ion_navigate-circle (1).png';
+      };
+
+      // Function to rotate the carousel out
+      const rotateOut = () => {
+        imag1.style.animation = 'rotate-out 0.4s ease-out forwards';
+        circle.style.backgroundColor = '#FF995A';
+        ret.style.color = '#FF995A';
+        butt.style.backgroundColor = '#FF995A';
+        ecli.src = 'img/Ellipse 1 (2).png';
+        imag.src = 'img/center image2 1.png';
+        isRotating = false;
+        but.src = 'img/ion_navigate-circle (4).png';
+        but1.src = 'img/ion_navigate-circle (4).png';
+      };
+
+      // Function to zoom the image in
+      const zoomIn = () => {
+        imag.style.animation = 'zoom-in 0.9s ease-in-out forwards';
+        isZoomIn = true;
+      };
+
+      // Function to zoom the image out
+      const zoomOut = () => {
+        imag.style.animation = 'zoom-out 0.9s ease-in-out forwards';
+        isZoomIn = false;
+      };
+
+      // Function to toggle zoom and rotation on button click
+      const toggleEffect = () => {
+        if (isRotating) {
+          rotateOut();
+        } else {
+          rotateIn();
+        }
+
+        if (isZoomIn) {
+          zoomOut();
+        } else {
+          zoomIn();
+        }
+      };
+
+      button1.addEventListener('click', toggleEffect);
+      button2.addEventListener('click', toggleEffect);
+
+    </script>
+
 
 </body>
 
