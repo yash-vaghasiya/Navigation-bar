@@ -148,11 +148,13 @@ body {
   left: 30rem;
   transform: translate(-50%, -50%);
 }
+
 .green {
   top: 80%;
   left: 27rem;
   transform: translate(-50%, -50%);
 }
+
 .yellow {
   top: 78%;
   right: 21.5rem;
@@ -168,16 +170,20 @@ body {
   0% {
     transform: rotate(0deg);
   }
-  25%{
+
+  25% {
     transform: rotate(10deg);
   }
-  50%{
+
+  50% {
     transform: rotate(20deg);
   }
-  75%{
+
+  75% {
     transform: rotate(30deg);
   }
-  100%{
+
+  100% {
     transform: rotate(40deg);
   }
 }
@@ -186,23 +192,29 @@ body {
   0% {
     transform: rotate(0deg);
   }
-  25%{
+
+  25% {
     transform: rotate(-10deg);
   }
-  50%{
+
+  50% {
     transform: rotate(-20deg);
   }
-  75%{
+
+  75% {
     transform: rotate(-30deg);
   }
-  100%{
+
+  100% {
     transform: rotate(-40deg);
   }
 }
+
 @keyframes zoom-in {
   0% {
     transform: scale(-1);
   }
+
   100% {
     transform: scale(1);
   }
@@ -212,48 +224,49 @@ body {
   0% {
     transform: scale(1.2);
   }
+
   100% {
     transform: scale(-1);
   }
 }
-  /* Add media query for mobile screens */
-  @media (max-width: 576px) {
-    .circle {
-      height: 300px;
-      width: 300px;
-      border-radius: 150px;
-      left: calc(50% - 150px);
-      top: calc(50% - 150px);
-    }
 
-    .image {
-      left: 1.5rem;
-      top: 0.9rem;
-    }
-
-    .rest {
-      top: 4rem;
-      text-align: center;
-    }
-
-    .imag,
-    .i1,
-    .i2,
-    .i3,
-    .i4,
-    .i5 {
-      position: static;
-      margin: 2rem auto;
-    }
-
-    .button1,
-    .button2 {
-      position: relative;
-      height: 30px;
-      width: 40px;
-      border: none;
-      margin: 0 auto;
-      margin-top: 2rem;
-    }
+/* Add media query for mobile screens */
+@media (max-width: 576px) {
+  .circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    left: calc(50% - 150px);
+    top: calc(50% - 150px);
   }
 
+  .image {
+    left: 1.5rem;
+    top: 0.9rem;
+  }
+
+  .rest {
+    top: 4rem;
+    text-align: center;
+  }
+
+  .imag,
+  .i1,
+  .i2,
+  .i3,
+  .i4,
+  .i5 {
+    position: static;
+    margin: 2rem auto;
+  }
+
+  .button1,
+  .button2 {
+    position: relative;
+    height: 30px;
+    width: 40px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
