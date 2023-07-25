@@ -78,93 +78,18 @@ body {
 .imag {
   position: absolute;
   left: 52rem;
-  top: 18.5rem;
-}
-
-.i1 {
-  position: absolute;
-  left: 41.5rem;
-  top: 22rem;
-}
-
-.i2 {
-  position: absolute;
-  left: 46rem;
-  top: 12rem;
-}
-
-.i3 {
-  position: absolute;
-  left: 56rem;
-  top: 7.5rem;
-}
-
-.i4 {
-  position: absolute;
-  left: 68rem;
-  top: 12.5rem;
-}
-
-.i5 {
-  position: absolute;
-  left: 72.5rem;
-  top: 22rem;
-}
-
-.previous {
-  position: absolute;
-  left: 41rem;
-  top: 32rem;
-}
-
-.next {
-  position: absolute;
-  left: 74rem;
-  top: 32rem;
+  top: 19.5rem;
 }
 
 .button1,
 .button2 {
-  background-image: url(img/ion_navigate-circle\ \(1\).png);
+  position: relative;
   height: 30px;
   width: 40px;
-  border: #FFF;
-  margin-left: 11rem;
-  margin-right: 20rem;
-  margin-top: 24rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-/* Add media query for mobile screens */
-@media (max-width: 576px) {
-  .circle {
-    height: 300px;
-    width: 300px;
-    border-radius: 150px;
-    left: -50px;
-    top: -100px;
-  }
-
-  .image {
-    left: 1.5rem;
-    top: 0.9rem;
-  }
-
-  .rest {
-    top: 4rem;
-    /* text-align: center; */
-  }
-
-  .imag,
-  .i1,
-  .i2,
-  .i3,
-  .i4,
-  .i5 {
-    position: static;
-    margin: 2rem auto;
-  }
+  border: none;
+  margin-left: 41rem;
+  margin-right: -10rem;
+  margin-top: 4.5rem;
 }
 
 #parent-circle1 {
@@ -243,6 +168,15 @@ body {
   0% {
     transform: rotate(0deg);
   }
+  25%{
+    transform: rotate(10deg);
+  }
+  50%{
+    transform: rotate(20deg);
+  }
+  75%{
+    transform: rotate(30deg);
+  }
   100%{
     transform: rotate(40deg);
   }
@@ -252,7 +186,74 @@ body {
   0% {
     transform: rotate(0deg);
   }
+  25%{
+    transform: rotate(-10deg);
+  }
+  50%{
+    transform: rotate(-20deg);
+  }
+  75%{
+    transform: rotate(-30deg);
+  }
   100%{
     transform: rotate(-40deg);
   }
 }
+@keyframes zoom-in {
+  0% {
+    transform: scale(-1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(-1);
+  }
+}
+  /* Add media query for mobile screens */
+  @media (max-width: 576px) {
+    .circle {
+      height: 300px;
+      width: 300px;
+      border-radius: 150px;
+      left: calc(50% - 150px);
+      top: calc(50% - 150px);
+    }
+
+    .image {
+      left: 1.5rem;
+      top: 0.9rem;
+    }
+
+    .rest {
+      top: 4rem;
+      text-align: center;
+    }
+
+    .imag,
+    .i1,
+    .i2,
+    .i3,
+    .i4,
+    .i5 {
+      position: static;
+      margin: 2rem auto;
+    }
+
+    .button1,
+    .button2 {
+      position: relative;
+      height: 30px;
+      width: 40px;
+      border: none;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+  }
+
