@@ -6,4 +6,4 @@
 
 * Figma link =  https://www.figma.com/proto/ardakbkw84x5FP1tluD7dX/Food-Web-app-design-(Community)?type=design&node-id=6-28&t=2UcuGIbCVKWPedJQ-0&scaling=contain&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1 
 
-*  circle animation, modify animation, center image add animation, code modify.
+*  center image add animation, code modify, resume html css.
