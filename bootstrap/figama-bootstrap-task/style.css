@@ -5,7 +5,7 @@
 }
 
 .circle {
-  height: 69rem;
+  height: 69.5rem;
   width: 81rem;
   left: 20rem;
   top: -40rem;
@@ -22,7 +22,7 @@ body {
 }
 
 .circle {
-  background-color: #c0f6aa;
+  background-color: #72c452;
 }
 
 .image {
@@ -72,21 +72,19 @@ body {
 
 .imag {
   position: absolute;
-  left: 52rem;
+  left: 53rem;
   top: 19.5rem;
 }
 
 .button1,
 .button2 {
   position: inherit;
-  height: 3rem;
-  width: 3rem;
   shape-image-threshold: inherit;
   border-radius: 100%;
   border: none;
-  margin-left: 41rem;
-  margin-right: -10rem;
-  margin-top: 4.5rem;
+  margin-left: 42rem;
+  margin-right: -12.5rem;
+  margin-top: 6rem;
 }
 
 #parent-circle1 {
@@ -97,7 +95,6 @@ body {
   top: 50rem;
   left: 24.5rem;
   border-radius: 100%;
-  /* border: 2px solid black; */
 }
 
 .circle1 {
