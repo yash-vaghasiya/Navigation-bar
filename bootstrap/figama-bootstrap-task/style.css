@@ -223,11 +223,37 @@ body {
 
   .button1,
   .button2 {
-    margin-top: 14rem;
+    margin-top: 15rem;
+    margin-right: 5rem;
+    margin-left: 10rem;
   }
 
   .body {
     overflow: hidden;
     display: flex;
+  }
+
+  .circle {
+    height: 69.5rem;
+    width: 81rem;
+    left: -20rem;
+    top: -40rem;
+    z-index: -1;
+  }
+
+  .rest {
+    position: relative;
+    top: 33rem;
+    font-family: Poppins;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    flex-direction: column;
+    display: flex;
+  }
+  .imag {
+    position: absolute;
+    left: 13rem;
+    top: 19.5rem;
   }
 }
