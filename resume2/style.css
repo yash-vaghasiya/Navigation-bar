@@ -37,8 +37,12 @@ body {
 .skl {
     margin-left: 30px;
 }
+.ima{
+  height: 21%;
+  width: 100%;
+}
 .image{
-    margin-top: 20px;
+    margin-top: 20px;  
 }
 .hed{
     margin-top: 20px;
@@ -98,7 +102,7 @@ body {
   }
  .right .resume_work ul,
 .right  .resume_education ul {
-  padding-left: 100px;
+  padding-left: 40px;
   overflow: hidden;
   margin-top: 20px;
   
@@ -113,7 +117,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 20px;
-  margin-left: 1.5rem;
+  /* margin-left: ; */
 }
 
  .right  ul li .info {
@@ -129,9 +133,9 @@ body {
   content: "";
   position: absolute;
   top: 6px;
-  left: -17px;
-  width: 6px;
-  height: 6px;
+  left: 103px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
   border: 2px solid black;
 }
@@ -141,11 +145,69 @@ body {
   content: "";
   position: absolute;
   top: 14px;
-  left: -15px;
+  left: 105px;
   width: 3px;
   height: 115px;
   background: black;
 }
 .resume_item{
-    padding: 3rem;
+    padding: 50px;
 }
+.data{
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  margin: 0;
+  margin-right: 2rem;
+}
+.r{
+  margin-left: 1.5rem;
+}
+.semi-bold{
+  margin-left: 1.5rem;
+}
+.right{
+  position: initial;
+}
+@media screen and (max-width: 770px) {
+  .full {
+      grid-template-columns: 1fr; 
+  }
+  .right {
+      margin-top: 20px; 
+  }
+  .left, .right {
+      padding: 10px; 
+  }
+  .name {
+      margin-left: 10px; 
+  }
+  .Summary {
+      padding: 10px;
+  }
+  .skl ul li .skill_name {
+      width: 80%;
+  }
+  .right  .resume_work ul li:before,
+.right  .resume_education ul li :before {
+ content: "";
+ position: absolute;
+ top: 6px;
+ left: 56px;
+ width: 4px;
+ height: 4px;
+ border-radius: 50%;
+ border: 2px solid black;
+}
+
+ .resume_work ul li:after,
+ .resume_education ul li:after {
+ content: "";
+ position: absolute;
+ top: 14px;
+ left: 58px;
+ width: 3px;
+ height: 205px;
+ background: black;
+}
+}
+
