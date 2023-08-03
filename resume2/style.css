@@ -15,7 +15,7 @@ body {
   width: 100%;
   margin: 0px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 0.5fr 4fr;
 }
 
 .left {
@@ -38,45 +38,37 @@ body {
   margin-left: 30px;
 }
 
-.ima {
-  height: 21%;
-  width: 100%;
-}
-
-.image {
-  margin-top: 20px;
-}
-
 .hed {
   margin-top: 20px;
 }
 
-.name {
+/* .name {
   margin-left: 56rem;
   margin-top: 20px;
   position: relative;
-}
+} */
 
 .name i {
   margin-right: 10px;
 }
 
 .Summary {
-  margin-top: 40px;
+  margin-top: 2rem;
   color: white;
   background-color: rgb(33, 24, 24);
   padding: 3rem;
-  height: 13rem;
+  height: auto;
 }
 
-.Contact {
+.contact {
   padding: 10px;
 }
 
+/* 
 .Skills {
   padding: 10px;
-}
-
+} */
+/* 
 .skl {
   padding: 10px;
 }
@@ -110,37 +102,33 @@ body {
   left: 0;
   height: 100%;
   background: black;
-}
+} */
 
-.right .resume_work ul,
-.right .resume_education ul {
-  padding-left: 40px;
+.right .resume_work .list,
+.right .resume_education .list {
+  padding-left: 50px;
   overflow: hidden;
   margin-top: 20px;
 
 }
 
-.right ul li {
+.right .list .lis {
   position: relative;
 
 }
 
-.right ul li .date {
+.right .list .lis .date {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.right ul li .info {
-  margin-bottom: 20px;
-}
-
-.right ul li:last-child .info {
+.right .list .lis :last-child .info {
   margin-bottom: 0;
 }
 
-.right .resume_work ul li:before,
-.right .resume_education ul li :before {
+.right .resume_work .list .lis :before,
+.right .resume_education .list .lis :before {
   content: "";
   position: absolute;
   top: 6px;
@@ -151,87 +139,75 @@ body {
   border: 2px solid black;
 }
 
-.resume_work ul li:after,
-.resume_education ul li:after {
+.resume_work .list .lis:after,
+.resume_education .list .lis:after {
   content: "";
   position: absolute;
   top: 14px;
   left: 105px;
   width: 3px;
-  height: 79px;
+  height: 150px;
   background: black;
 }
 
-.resume_item {
-  padding: 50px;
+.contacte {
+  padding: 20px;
+  padding-left: 40px;
 }
 
-.data {
-  display: grid;
-  grid-template-columns: 0.5fr 4fr;
-  margin: 0;
-  margin-right: 2rem;
+.Porsanal {
+  padding: 20px;
+  padding-left: 40px;
+}
+
+.resume_item1 {
+  padding: 40px;
 }
 
 .r {
-  margin-left: 1.5rem;
+  margin-left: 8rem;
+  margin-top: -1rem;
 }
 
 .semi-bold {
-  margin-left: 1.5rem;
+  margin-left: 8rem;
 }
 
-.right {
-  position: initial;
+.work {
+  margin-top: 150px;
 }
 
-@media screen and (max-width: 770px) and (max-width: 1024px) {
-  .full {
-    grid-template-columns: 1fr;
-  }
+.work-desc h2 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
 
-  .right {
-    margin-top: 20px;
-  }
+.work-desc p {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 12px;
 
-  .left,
-  .right {
-    padding: 10px;
-  }
+}
 
-  .name {
-    margin-left: 10px;
-  }
+.box1 {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 1fr;
+  gap: 12px;
+}
 
-  .Summary {
-    padding: 10px;
-    margin-top: -32px;
-  }
+.box-in {
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  background-color: hsl(240deg 4% 9.8%);
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
 
-  .skl ul li .skill_name {
-    width: 80%;
-  }
-
-  .right .resume_work ul li:before,
-  .right .resume_education ul li :before {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 56px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    border: 2px solid black;
-  }
-
-  .resume_work ul li:after,
-  .resume_education ul li:after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: 58px;
-    width: 3px;
-    height: 205px;
-    background: black;
-  }
+.box-img {
+  height: 170px;
+  width: 170px;
+  border-radius: 7px;
 }
