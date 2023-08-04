@@ -19,9 +19,9 @@ body {
     padding-top: 2rem;
     gap: 2rem;
 }
+
 .contact,
-.portfolio
- {
+.portfolio {
     color: white;
     padding-left: 50px;
     margin-right: 44px;
@@ -113,10 +113,11 @@ body {
     background: white;
     padding: 25px;
 }
+
 .portfolio,
 .contact p,
 .experience p,
-.education p{
+.education p {
     font-size: 15px;
 }
 
@@ -180,6 +181,7 @@ body {
     left: 46px;
     top: 65px;
 }
-.contact p{
-  margin-top: 10px;
+
+.contact p {
+    margin-top: 10px;
 }
